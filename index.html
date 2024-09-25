@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            color: #00ff00;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #111111;
+            border-bottom: 1px solid #333333;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #00ff00;
+            margin-left: 15px;
+            text-decoration: none;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .banner {
+            background-color: #111111;
+            color: #00ff00;
+            text-align: center;
+            padding: 50px 0;
+            font-size: 32px;
+            font-weight: bold;
+            border-bottom: 1px solid #333333;
+            position: relative;
+        }
+
+        .banner img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #333333;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        #services, #about, #contact {
+            background-color: #111111;
+            margin: 20px 0;
+            border-radius: 5px;
+            border: 1px solid #333333;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #00ff00;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .service-category {
+            margin: 20px 0;
+        }
+
+        .service-category-title {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #00ff00;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .service-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .service-item {
+            width: 200px;
+            text-align: center;
+            background-color: #222222;
+            border: 1px solid #333333;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        }
+
+        .service-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .service-item p {
+            margin: 10px 0 0;
+            font-size: 14px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #222222;
+            border: 1px solid #444444;
+            color: #00ff00;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #333333;
+            border: 1px solid #444444;
+            color: #00ff00;
+            cursor: pointer;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        button:hover {
+            background-color: #444444;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #111111;
+            border-top: 1px solid #333333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Anti-System</div>
+        <nav>
+            <a href="#services">Servicios</a>
+            <a href="#about">Sobre Nosotros</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <img src="logo.jpg" alt="Logo de Anti-System">
+            <h1>Donde la identidad se redefine.</h1>
+        </section>
+        <section id="services">
+            <h2>Nuestros Servicios</h2>
+
+            <!-- Documentos Personales -->
+            <div class="service-category">
+                <div class="service-category-title">Documentos Personales</div>
+                <div class="service-items">
+                    <div class="service-item">
+                        <img src="actanacimiento.jpg" alt="Acta de nacimiento">
+                        <p>Acta de nacimiento</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="licenciaconducir.jpg" alt="Licencia de conducir">
+                        <p>Licencia de conducir</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="pasaporte.jpg" alt="Pasaporte">
+                        <p>Pasaporte</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="cartillamilitar.jpg" alt="Cartilla militar">
+                        <p>Cartilla militar</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="ine.jpg" alt="INE">
+                        <p>INE</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="curp.jpg" alt="CURP">
+                        <p>CURP</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="comprobantedomicilio.jpg" alt="Comprobante de domicilio">
+                        <p>Comprobante de domicilio</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Documentos Financieros -->
+            <div class="service-category">
+                <div class="service-category-title">Documentos Financieros</div>
+                <div class="service-items">
+                    <div class="service-item">
+                        <img src="estadoscuenta.jpg" alt="Estados de cuenta">
+                        <p>Estados de cuenta</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="registroscontables.jpg" alt="Registros contables">
+                        <p>Registros contables</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="comprobanteingresos.jpg" alt="Comprobante de ingresos">
+                        <p>Comprobante de ingresos</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="polizaseguro.jpg" alt="Póliza de seguro">
+                        <p>Póliza de seguro</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="contratoprestamo.jpg" alt="Contrato de préstamo">
+                        <p>Contrato de préstamo</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="comprobantefiscal.jpg" alt="Comprobante fiscal">
+                        <p>Comprobante fiscal</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Documentos Legales -->
+            <div class="service-category">
+                <div class="service-category-title">Documentos Legales</div>
+                <div class="service-items">
+                    <div class="service-item">
+                        <img src="contratoarrendamiento.jpg" alt="Contrato de arrendamiento">
+                        <p>Contrato de arrendamiento</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="contratocompraventa.jpg" alt="Contrato de compraventa">
+                        <p>Contrato de compraventa</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="acuerdosprenupciales.jpg" alt="Acuerdos prenupciales">
+                        <p>Acuerdos prenupciales</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="documentosadopcion.jpg" alt="Documentos de adopción">
+                        <p>Documentos de adopción</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="antecedentesnopenales.jpg" alt="Antecedentes no penales">
+                        <p>Antecedentes no penales</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="ordenrestriccion.jpg" alt="Orden de restricción">
+                        <p>Orden de restricción</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="permisosconstruccion.jpg" alt="Permisos de construcción">
+                        <p>Permisos de construcción</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="actadivorcio.jpg" alt="Acta de divorcio">
+                        <p>Acta de divorcio</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="actadefuncion.jpg" alt="Acta de defunción">
+                        <p>Acta de defunción</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="actamatrimonio.jpg" alt="Acta de matrimonio">
+                        <p>Acta de matrimonio</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="contratoslaborales.jpg" alt="Contratos laborales">
+                        <p>Contratos laborales</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="poderesnotariales.jpg" alt="Poderes notariales">
+                        <p>Poderes notariales</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="testamentos.jpg" alt="Testamentos">
+                        <p>Testamentos</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="escrituraspropiedad.jpg" alt="Escrituras de propiedad">
+                        <p>Escrituras de propiedad</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="incapacidadimssissste.jpg" alt="Incapacidad IMSS e ISSSTE">
+                        <p>Incapacidad IMSS e ISSSTE</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificados Académicos -->
+            <div class="service-category">
+                <div class="service-category-title">Certificados Académicos</div>
+                <div class="service-items">
+                    <div class="service-item">
+                        <img src="certificadobachillerato.jpg" alt="Certificado de bachillerato">
+                        <p>Certificado de bachillerato</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="titulouniversitario.jpg" alt="Título universitario">
+                        <p>Título universitario</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="tituloposgrado.jpg" alt="Título de posgrado">
+                        <p>Título de posgrado</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="certificadoestudiostecnicos.jpg" alt="Certificado de estudios técnicos">
+                        <p>Certificado de estudios técnicos</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="certificadoidiomas.jpg" alt="Certificado de idiomas">
+                        <p>Certificado de idiomas</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="certificadoestudios.jpg" alt="Certificado de estudios">
+                        <p>Certificado de estudios</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2 style="text-align: center;">Sobre Anti-System</h2>
+            <p>En Anti-System, nuestra experiencia en la obtención de documentos falsificados se basa en una red segura y altamente discreta. Utilizamos canales y contactos especializados en la adquisición de información y recursos, lo que nos permite obtener documentos sin levantar sospechas ni exponernos. Nuestros procesos están diseñados para proteger la privacidad y la seguridad tanto de nuestros clientes como de nuestras operaciones, garantizando una experiencia confiable y sin riesgos.</p>
+        </section>
+        <section id="contact">
+         <main>
+        <section>
+            <h2>Único Contacto</h2>
+            <p>Correo Electrónico: <a href="mailto:antisysteminfo@gmail.com">antisysteminfo@gmail.com</a></p>
+        </section>
+    </main>
+    <footer>
+        <p style="text-align: center;">&copy; 2024 Anti-System. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+</body>
+</html>
